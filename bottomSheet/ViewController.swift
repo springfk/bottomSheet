@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func showChildViewControllerWithPresentModal(_ sender: Any) {
         let vc = CustomModalViewController()
-        vc.modalTransitionStyle = .crossDissolve
+//        vc.modalTransitionStyle = .crossDis/solve
         vc.modalPresentationStyle = .custom
         self.present(vc, animated: false)
     }

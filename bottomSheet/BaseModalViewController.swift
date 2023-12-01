@@ -21,13 +21,26 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.delegate = self
+        scrollView.keyboardDismissMode = .interactive
+        scrollView.alwaysBounceVertical = true
+        scrollView.contentInsetAdjustmentBehavior = .never
+        scrollView.backgroundColor = .clear
+        scrollView.showsVerticalScrollIndicator = true
         return scrollView
     }()
+    
+//    lazy var footerView: UIView? = {
+//        shouldIncludeFooterView ? UIView() : nil
+//    }()
+
+    // Computed property to determine if the footer view should be included
+    open var shouldIncludeFooterView: Bool {
+        return false
+    }
+
 
 //    public private(set) var scrollView: UIScrollView!
-    public private(set) var contentViewForData: UIView!
-    public private(set) var footerView: UIView!
-    public private(set) var headerView: UIView!
     private var scrollViewTopConstraint: NSLayoutConstraint?
 
     
@@ -44,13 +57,14 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
     var lastUpdatedHeight: CGFloat = 0
     let dismissibleHeight: CGFloat = 400
     
-    let maximumContainerHeight  : CGFloat = UIScreen.main.bounds.height - 130
+    let maximumContainerHeight  : CGFloat = UIScreen.main.bounds.height - 150
     
-    private var keyboardHeight: CGFloat = 0
+    var keyboardHeight: CGFloat = 0
 
 
     var containerViewHeightConstraint: NSLayoutConstraint?
     var containerViewBottomConstraint: NSLayoutConstraint?
+    var footerViewBottomConstraint: NSLayoutConstraint?
     
     var prefersGrabberVisible: Bool {
         return false
@@ -63,7 +77,10 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         setupPanGesture()
         setupOverlayView()
         setupScrollView()
-
+        
+        if shouldIncludeFooterView {
+//            setupFooterView()
+        }
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleCloseAction))
         scrollView.addGestureRecognizer(tapGesture)
         
@@ -86,22 +103,24 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
     }
 
     func addContentToScrollView(content: UIView) {
-        scrollView.delegate = self
-        scrollView.keyboardDismissMode = .interactive
-        scrollView.alwaysBounceVertical = true
-        scrollView.contentInsetAdjustmentBehavior = .never
-        scrollView.backgroundColor = .clear
-        scrollView.showsVerticalScrollIndicator = false
-        
+ 
         scrollView.addSubview(content)
         content.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             content.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
             content.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
             content.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
-            content.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor)
+            content.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor),
+            content.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor)
         ])
     }
+    
+
+    // Override this method in subclasses to provide custom footer view setup
+//    open func setupFooterView() {
+//        guard let footerView = footerView else { return }
+//        
+//    }
     
     private var headerViewHeightConstraint: CGFloat {
         return 58
@@ -146,7 +165,7 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
             let textFieldFrame = activeTextField.convert(activeTextField.bounds, to: view)
 
             // Calculate the visible area height above the keyboard.
-            let visibleAreaHeight = UIScreen.main.bounds.height - 130 - keyboardHeight
+            let visibleAreaHeight = maximumContainerHeight - keyboardHeight
 
             // Calculate the offset needed to make the active text field visible.
             let offset = visibleAreaHeight - textFieldFrame.maxY// - visibleAreaHeight
@@ -154,7 +173,7 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
             // Only move the view if the text field is actually obscured by the keyboard.
             if offset > 0 {
                 // Calculate new bottom constraint value considering the maximum container height.
-                let adjustedHeight = min(maximumContainerHeight, containerViewHeightConstraint?.constant ?? 0)// + //offset)
+                let adjustedHeight = min(maximumContainerHeight, containerViewHeightConstraint?.constant ?? 0 + offset)
 
                 containerViewHeightConstraint?.constant = adjustedHeight
 
@@ -176,6 +195,7 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
     @objc func keyboardWillHide(_ notification: Notification) {
         containerViewHeightConstraint?.constant = defaultContainerHeight
         containerViewBottomConstraint?.constant = 0 // Reset to default
+//        keyboardHeight = 0
 
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
@@ -346,7 +366,7 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
     func adjustModalHeightBasedOnContent() {
           guard let contentView = contentView() else { return }
           let totalContentHeight = contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
-          let cappedHeight = min(totalContentHeight, UIScreen.main.bounds.height - 130)
+          let cappedHeight = min(totalContentHeight, maximumContainerHeight)
 
           containerViewHeightConstraint?.constant = cappedHeight
           if totalContentHeight > cappedHeight {
