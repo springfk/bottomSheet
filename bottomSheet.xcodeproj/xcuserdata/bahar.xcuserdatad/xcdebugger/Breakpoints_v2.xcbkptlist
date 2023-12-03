@@ -266,13 +266,13 @@
             filePath = "bottomSheet/BaseModalViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "305"
-            endingLineNumber = "305"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
             landmarkName = "handlePanGesture(gesture:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FC66A602-0B48-44FE-833A-C14B18994C69 - 99f3ae45b2f2e49f"
+                  uuid = "FC66A602-0B48-44FE-833A-C14B18994C69 - 99f3ae45b2f2e94a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -282,12 +282,12 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "288"
-                  endingLineNumber = "288"
-                  offsetFromSymbolStart = "2412">
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "2440">
                </Location>
                <Location
-                  uuid = "FC66A602-0B48-44FE-833A-C14B18994C69 - 99f3ae45b2f2e49f"
+                  uuid = "FC66A602-0B48-44FE-833A-C14B18994C69 - 99f3ae45b2f2e6af"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -297,9 +297,39 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "288"
-                  endingLineNumber = "288"
-                  offsetFromSymbolStart = "2388">
+                  startingLineNumber = "272"
+                  endingLineNumber = "272"
+                  offsetFromSymbolStart = "2540">
+               </Location>
+               <Location
+                  uuid = "FC66A602-0B48-44FE-833A-C14B18994C69 - 99f3ae45b2f2e6af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.handlePanGesture(gesture: __C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "272"
+                  endingLineNumber = "272"
+                  offsetFromSymbolStart = "2416">
+               </Location>
+               <Location
+                  uuid = "FC66A602-0B48-44FE-833A-C14B18994C69 - 99f3ae45b2f2e94a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.handlePanGesture(gesture: __C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "2416">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -314,13 +344,13 @@
             filePath = "bottomSheet/BaseModalViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
             landmarkName = "handlePanGesture(gesture:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "1C75F888-60C1-48E6-8276-AD6FF88A1E81 - 99f3ae45b2f2e7e1"
+                  uuid = "1C75F888-60C1-48E6-8276-AD6FF88A1E81 - 99f3ae45b2f2e9d6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -330,12 +360,12 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "278"
-                  endingLineNumber = "278"
-                  offsetFromSymbolStart = "1596">
+                  startingLineNumber = "263"
+                  endingLineNumber = "263"
+                  offsetFromSymbolStart = "2212">
                </Location>
                <Location
-                  uuid = "1C75F888-60C1-48E6-8276-AD6FF88A1E81 - 99f3ae45b2f2e7e1"
+                  uuid = "1C75F888-60C1-48E6-8276-AD6FF88A1E81 - 99f3ae45b2f2e9f1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -345,9 +375,24 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "278"
-                  endingLineNumber = "278"
-                  offsetFromSymbolStart = "1552">
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "1504">
+               </Location>
+               <Location
+                  uuid = "1C75F888-60C1-48E6-8276-AD6FF88A1E81 - 99f3ae45b2f2e89c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.handlePanGesture(gesture: __C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "257"
+                  endingLineNumber = "257"
+                  offsetFromSymbolStart = "1504">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -362,13 +407,13 @@
             filePath = "bottomSheet/BaseModalViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "278"
-            endingLineNumber = "278"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "handlePanGesture(gesture:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3EF336BF-C029-4A3B-94BD-1FC343D17982 - 99f3ae45b2f2e810"
+                  uuid = "3EF336BF-C029-4A3B-94BD-1FC343D17982 - 99f3ae45b2f2ea43"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -378,12 +423,12 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "261"
-                  endingLineNumber = "261"
-                  offsetFromSymbolStart = "768">
+                  startingLineNumber = "244"
+                  endingLineNumber = "244"
+                  offsetFromSymbolStart = "748">
                </Location>
                <Location
-                  uuid = "3EF336BF-C029-4A3B-94BD-1FC343D17982 - 99f3ae45b2f2e810"
+                  uuid = "3EF336BF-C029-4A3B-94BD-1FC343D17982 - 99f3ae45b2f2ebe6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -393,9 +438,39 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "261"
-                  endingLineNumber = "261"
-                  offsetFromSymbolStart = "616">
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "820">
+               </Location>
+               <Location
+                  uuid = "3EF336BF-C029-4A3B-94BD-1FC343D17982 - 99f3ae45b2f2ea20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.handlePanGesture(gesture: __C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "3EF336BF-C029-4A3B-94BD-1FC343D17982 - 99f3ae45b2f2eacf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.handlePanGesture(gesture: __C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "240"
+                  endingLineNumber = "240"
+                  offsetFromSymbolStart = "608">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -410,13 +485,13 @@
             filePath = "bottomSheet/BaseModalViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "283"
-            endingLineNumber = "283"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
             landmarkName = "handlePanGesture(gesture:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "E8E8E8AE-F226-499D-B24E-B84248FCED62 - 99f3ae45b2f2e92b"
+                  uuid = "E8E8E8AE-F226-499D-B24E-B84248FCED62 - 99f3ae45b2f2ebe6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -426,12 +501,12 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "268"
-                  endingLineNumber = "268"
-                  offsetFromSymbolStart = "860">
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "820">
                </Location>
                <Location
-                  uuid = "E8E8E8AE-F226-499D-B24E-B84248FCED62 - 99f3ae45b2f2e975"
+                  uuid = "E8E8E8AE-F226-499D-B24E-B84248FCED62 - 99f3ae45b2f2eb5a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -441,9 +516,39 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "266"
-                  endingLineNumber = "266"
-                  offsetFromSymbolStart = "788">
+                  startingLineNumber = "251"
+                  endingLineNumber = "251"
+                  offsetFromSymbolStart = "924">
+               </Location>
+               <Location
+                  uuid = "E8E8E8AE-F226-499D-B24E-B84248FCED62 - 99f3ae45b2f2eb85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.handlePanGesture(gesture: __C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "250"
+                  endingLineNumber = "250"
+                  offsetFromSymbolStart = "748">
+               </Location>
+               <Location
+                  uuid = "E8E8E8AE-F226-499D-B24E-B84248FCED62 - 99f3ae45b2f2ea20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.handlePanGesture(gesture: __C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "748">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -458,13 +563,13 @@
             filePath = "bottomSheet/BaseModalViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "keyboardWillShow(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "ED66AFF0-4381-4962-8F13-59D07DD029CC - 65b1a2a3872f189f"
+                  uuid = "ED66AFF0-4381-4962-8F13-59D07DD029CC - 65b1a2a3872f18be"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -474,9 +579,9 @@
                   urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
-                  offsetFromSymbolStart = "1716">
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "1920">
                </Location>
                <Location
                   uuid = "ED66AFF0-4381-4962-8F13-59D07DD029CC - 65b1a2a3872f18e1"
@@ -491,9 +596,732 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "154"
                   endingLineNumber = "154"
-                  offsetFromSymbolStart = "1688">
+                  offsetFromSymbolStart = "1576">
+               </Location>
+               <Location
+                  uuid = "ED66AFF0-4381-4962-8F13-59D07DD029CC - 65b1a2a3872f1984"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "1576">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96E7F110-5472-4228-B8F5-55321BD5F33D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "keyboardWillShow(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "96E7F110-5472-4228-B8F5-55321BD5F33D - 65b1a2a3872f166d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "1208">
+               </Location>
+               <Location
+                  uuid = "96E7F110-5472-4228-B8F5-55321BD5F33D - 65b1a2a3872f19a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "1576">
+               </Location>
+               <Location
+                  uuid = "96E7F110-5472-4228-B8F5-55321BD5F33D - 65b1a2a3872f19e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "146"
+                  endingLineNumber = "146"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+               <Location
+                  uuid = "96E7F110-5472-4228-B8F5-55321BD5F33D - 65b1a2a3872f168c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "777053FD-FDA4-468F-BB29-F74F3D68DED6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "keyboardWillShow(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "777053FD-FDA4-468F-BB29-F74F3D68DED6 - b13b5fcf129134b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  uuid = "777053FD-FDA4-468F-BB29-F74F3D68DED6 - 65b1a2a3872f1710"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "744">
+               </Location>
+               <Location
+                  uuid = "777053FD-FDA4-468F-BB29-F74F3D68DED6 - 65b1a2a3872f17b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "744">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDAE5A4E-F9B3-435C-A7FA-86265331B17E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "keyboardWillShow(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FDAE5A4E-F9B3-435C-A7FA-86265331B17E - 1b34e32622309195"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "FDAE5A4E-F9B3-435C-A7FA-86265331B17E - 65b1a2a3872f183a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "1628">
+               </Location>
+               <Location
+                  uuid = "FDAE5A4E-F9B3-435C-A7FA-86265331B17E - 65b1a2a3872f18e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "1628">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CACE55F-5E6D-4019-AA42-F86A895DCBFA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "keyboardWillShow(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6CACE55F-5E6D-4019-AA42-F86A895DCBFA - 1b34e326223091f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "6CACE55F-5E6D-4019-AA42-F86A895DCBFA - 65b1a2a3872f1b74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "2300">
+               </Location>
+               <Location
+                  uuid = "6CACE55F-5E6D-4019-AA42-F86A895DCBFA - 65b1a2a3872f1bb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "2028">
+               </Location>
+               <Location
+                  uuid = "6CACE55F-5E6D-4019-AA42-F86A895DCBFA - 1b34e32622309238"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "6CACE55F-5E6D-4019-AA42-F86A895DCBFA - 65b1a2a3872f185d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "2028">
+               </Location>
+               <Location
+                  uuid = "6CACE55F-5E6D-4019-AA42-F86A895DCBFA - 1b34e32622309195"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in bottomSheet.BaseModalViewController.keyboardWillShow(Foundation.Notification) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4272A4F2-51D1-4DCC-9FDD-D9B1BAEE09C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "adjustViewForKeyboard(activeTextField:keyboardHeight:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4272A4F2-51D1-4DCC-9FDD-D9B1BAEE09C0 - 78823ad891c88c21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.adjustViewForKeyboard(activeTextField: Swift.Optional&lt;__C.UITextField&gt;, keyboardHeight: CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "1108">
+               </Location>
+               <Location
+                  uuid = "4272A4F2-51D1-4DCC-9FDD-D9B1BAEE09C0 - 78823ad891c88c21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.adjustViewForKeyboard(activeTextField: Swift.Optional&lt;__C.UITextField&gt;, keyboardHeight: CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "4272A4F2-51D1-4DCC-9FDD-D9B1BAEE09C0 - 78823ad891c88cfc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.adjustViewForKeyboard(activeTextField: Swift.Optional&lt;__C.UITextField&gt;, keyboardHeight: CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "456459DF-E632-4C8F-BE4E-E7F8C1DB63FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/CustomModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "setupConstraints()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "760DD7B7-F4C7-4F87-8143-57B63932F085"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/CustomModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "760DD7B7-F4C7-4F87-8143-57B63932F085 - ce9017dfa7575d76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.CustomModalViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/CustomModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "760DD7B7-F4C7-4F87-8143-57B63932F085 - ce9017dfa7575a91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.CustomModalViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/CustomModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "476">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29C7E909-CC6C-4B12-9B0F-57486A60556F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/CustomModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "setupConstraints()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2E52DE4-3552-485A-9A87-860CEE9ED8C6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "adjustModalHeightBasedOnContent()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28014513-2A3B-4A1B-AB62-E684F66B8506"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "28014513-2A3B-4A1B-AB62-E684F66B8506 - cc3fecc0c3cbe67d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.adjustForKeyboardAppearance() -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "28014513-2A3B-4A1B-AB62-E684F66B8506 - 3176739e6c28c2f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "28014513-2A3B-4A1B-AB62-E684F66B8506 - 3176739e6c28c59b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7F7747F-C94B-42F3-BAAE-FA1E6505FF61"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
+            landmarkName = "animatePresentContainer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B283AE8C-A7F2-4BC3-8227-E7A520155F24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/ListModalTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B283AE8C-A7F2-4BC3-8227-E7A520155F24 - 4ce444d30ea94aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.ListModalTableViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/ListModalTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "B283AE8C-A7F2-4BC3-8227-E7A520155F24 - 4ce444d30ea9485"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.ListModalTableViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/ListModalTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73F66547-11B8-432D-BD01-ED70860F2A33"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "animateContainerHeight(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "73F66547-11B8-432D-BD01-ED70860F2A33 - 462e1280a2d59e2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.animateContainerHeight(CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "287"
+                  endingLineNumber = "287"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "73F66547-11B8-432D-BD01-ED70860F2A33 - 867062a9ecf24fd6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in bottomSheet.BaseModalViewController.animateContainerHeight(CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "288"
+                  endingLineNumber = "288"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "73F66547-11B8-432D-BD01-ED70860F2A33 - 462e1280a2d59df1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bottomSheet.BaseModalViewController.animateContainerHeight(CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "282"
+                  endingLineNumber = "282"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "73F66547-11B8-432D-BD01-ED70860F2A33 - 867062a9ecf24c73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in bottomSheet.BaseModalViewController.animateContainerHeight(CoreGraphics.CGFloat) -&gt; ()"
+                  moduleName = "bottomSheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahar/Documents/bottomSheet/bottomSheet/BaseModalViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "283"
+                  endingLineNumber = "283"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78765B18-D7CE-4125-A7F8-C6C87DF4627C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/BaseModalViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "animateDismissView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "921608CE-A3B6-46F0-A1FB-F1D69DC68FFD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bottomSheet/ListModalTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "setupTableView()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

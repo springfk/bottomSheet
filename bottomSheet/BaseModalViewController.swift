@@ -30,9 +30,12 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         return scrollView
     }()
     
-//    lazy var footerView: UIView? = {
-//        shouldIncludeFooterView ? UIView() : nil
-//    }()
+    lazy var footerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        return view
+    }()
+    
 
     // Computed property to determine if the footer view should be included
     open var shouldIncludeFooterView: Bool {
@@ -40,7 +43,6 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
     }
 
 
-//    public private(set) var scrollView: UIScrollView!
     private var scrollViewTopConstraint: NSLayoutConstraint?
 
     
@@ -49,22 +51,21 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         0
     }
     
+    public var headerViewHeightConstraint: CGFloat {
+         58
+    }
+    
     // Constants
-    let maxDimmedAlpha: CGFloat = 0.5
-    
-    var defaultContainerHeight: CGFloat = 500 //for default state with no containerViewHeightConstraint is setted.
-    
-    var lastUpdatedHeight: CGFloat = 0
-    let dismissibleHeight: CGFloat = 400
-    
-    let maximumContainerHeight  : CGFloat = UIScreen.main.bounds.height - 150
-    
-    var keyboardHeight: CGFloat = 0
+    var maxDimmedAlpha              : CGFloat = 0.5
+    var defaultContainerHeight      : CGFloat = 500 //for default state with no containerViewHeightConstraint is setted.
+    var lastUpdatedHeight           : CGFloat = 0
+    var dismissibleHeight           : CGFloat = 400
+    var maximumContainerHeight      : CGFloat = UIScreen.main.bounds.height - 150
+    var keyboardHeight              : CGFloat = 0
 
 
     var containerViewHeightConstraint: NSLayoutConstraint?
     var containerViewBottomConstraint: NSLayoutConstraint?
-    var footerViewBottomConstraint: NSLayoutConstraint?
     
     var prefersGrabberVisible: Bool {
         return false
@@ -83,6 +84,8 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         }
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleCloseAction))
         scrollView.addGestureRecognizer(tapGesture)
+        containerViewBottomConstraint?.constant = defaultContainerHeight
+
         
         lastUpdatedHeight = defaultContainerHeight
     
@@ -100,30 +103,6 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
-    }
-
-    func addContentToScrollView(content: UIView) {
- 
-        scrollView.addSubview(content)
-        content.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            content.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
-            content.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
-            content.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
-            content.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor),
-            content.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor)
-        ])
-    }
-    
-
-    // Override this method in subclasses to provide custom footer view setup
-//    open func setupFooterView() {
-//        guard let footerView = footerView else { return }
-//        
-//    }
-    
-    private var headerViewHeightConstraint: CGFloat {
-        return 58
     }
     
     
@@ -151,7 +130,6 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
 
         keyboardHeight = keyboardFrame.height
-
         // Adjust the bottom constraint of the container view.
         containerViewBottomConstraint?.constant = -keyboardHeight
 
@@ -202,22 +180,6 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 
-
-
-//    func adjustViewForKeyboard(activeTextField: UITextField?, keyboardHeight: CGFloat) {
-//        guard let activeTextField = activeTextField else { return }
-//        
-//        let textFieldFrame = activeTextField.convert(activeTextField.bounds, to: view)
-//        let viewFrame = view.frame.inset(by: view.safeAreaInsets)
-//        let keyboardTop = viewFrame.height - keyboardHeight
-//        
-//        if textFieldFrame.maxY > keyboardTop {
-//            containerViewBottomConstraint?.constant = -(textFieldFrame.maxY - keyboardTop)
-//            UIView.animate(withDuration: 0.3) {
-//                self.view.layoutIfNeeded()
-//            }
-//        }
-//    }
     
     func adjustViewForKeyboard(activeTextField: UITextField?, keyboardHeight: CGFloat) {
         guard let activeTextField = activeTextField else { return }
@@ -276,7 +238,7 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         }
         let translation = gesture.translation(in: view)
         let velocity = gesture.velocity(in: view)
-        let isDraggingDown = translation.y > 0
+//        let isDraggingDown = translation.y > 0
         
         
         // New height is based on value of dragging plus current container height
@@ -325,12 +287,15 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func animatePresentContainer() {
+        containerViewBottomConstraint?.constant = defaultContainerHeight
+         self.view.layoutIfNeeded()
+
         UIView.animate(withDuration: 0.3) {
             self.containerViewBottomConstraint?.constant = 0
             self.view.layoutIfNeeded()
         }
     }
-    
+
     
     func animateShowOverlayView() {
         overlayView.alpha = 0
@@ -351,8 +316,7 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
         }
         // hide main view by updating bottom constraint in animation block
         UIView.animate(withDuration: 0.3) {
-            self.containerViewBottomConstraint?.constant = self.defaultContainerHeight//self.defaultHeight
-            // call this to trigger refresh constraint
+            self.containerViewBottomConstraint?.constant = self.defaultContainerHeight
             self.view.layoutIfNeeded()
         }
     }
@@ -368,16 +332,48 @@ class BaseModalViewController: UIViewController, UIScrollViewDelegate {
           let totalContentHeight = contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
           let cappedHeight = min(totalContentHeight, maximumContainerHeight)
 
-          containerViewHeightConstraint?.constant = cappedHeight
-          if totalContentHeight > cappedHeight {
-              scrollView.contentSize = CGSize(width: view.frame.width, height: totalContentHeight)
-              scrollView.isScrollEnabled = true
-          } else {
-              scrollView.contentSize = CGSize(width: view.frame.width, height: cappedHeight)
-              scrollView.isScrollEnabled = false
-          }
+        containerViewHeightConstraint?.constant = cappedHeight
+        scrollView.contentSize = CGSize(width: view.frame.width, height: totalContentHeight)
+        scrollView.isScrollEnabled = true
+//          if totalContentHeight > cappedHeight {
+//              scrollView.contentSize = CGSize(width: view.frame.width, height: totalContentHeight)
+//              scrollView.isScrollEnabled = true
+//          } else {
+//              scrollView.contentSize = CGSize(width: view.frame.width, height: cappedHeight)
+//              scrollView.isScrollEnabled = false
+//          }
           view.layoutIfNeeded()
       }
+//    func adjustModalHeightBasedOnContent() {
+//          guard let contentView = contentView() else { return }
+//          let totalContentHeight = contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+//          let cappedHeight = min(totalContentHeight, maximumContainerHeight)
+//
+//          containerViewHeightConstraint?.constant = cappedHeight
+//          if totalContentHeight > cappedHeight {
+//              scrollView.contentSize = CGSize(width: view.frame.width, height: totalContentHeight)
+//              scrollView.isScrollEnabled = true
+//          } else {
+//              scrollView.contentSize = CGSize(width: view.frame.width, height: cappedHeight)
+//              scrollView.isScrollEnabled = false
+//          }
+//          view.layoutIfNeeded()
+//      }
+//    func adjustModalHeightBasedOnContent() {
+//        // This is a basic implementation and can be overridden in subclasses
+//        // For instance, you might want to set a default height or handle other generic cases here
+//        let contentHeight = contentView()?.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height ?? 0
+//        let totalHeight = headerViewHeightConstraint + contentHeight + (footerView.frame.size.height)
+//        adjustContainerHeight(totalHeight)
+//    }
+//    
+//    func adjustContainerHeight(_ totalHeight: CGFloat) {
+//        let adjustedHeight = min(totalHeight, maximumContainerHeight)
+//        containerViewHeightConstraint?.constant = adjustedHeight
+//        containerViewBottomConstraint?.constant = -adjustedHeight
+//
+//        view.layoutIfNeeded()
+//    }
 
     }
 

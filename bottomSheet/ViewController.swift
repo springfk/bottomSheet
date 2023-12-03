@@ -9,11 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var listModalBtn: UIButton!
     @IBOutlet weak var listWithoutButton: UIStackView!
     @IBOutlet weak var scrollableModalView: UIButton!
-    @IBOutlet weak var viewWithOneTextField: UIButton!
-    @IBOutlet weak var viewWithMultipleTextFieled: UIButton!
-    @IBOutlet weak var viewWithScrolling: UIButton!
+
     var overlayView: UIView?
 
     
@@ -27,9 +26,16 @@ class ViewController: UIViewController {
         overlayView?.removeFromSuperview()
     }
     
+    
+    @IBAction func showListModalView(_ sender: Any) {
+        let vc = ListModalTableViewController()
+        vc.modalPresentationStyle = .custom
+        self.present(vc, animated: false)
+    }
+    
+    
     @IBAction func showChildViewControllerWithPresentModal(_ sender: Any) {
         let vc = CustomModalViewController()
-//        vc.modalTransitionStyle = .crossDis/solve
         vc.modalPresentationStyle = .custom
         self.present(vc, animated: false)
     }

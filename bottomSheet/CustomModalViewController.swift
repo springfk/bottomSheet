@@ -69,6 +69,7 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
         let label = UILabel()
         label.text = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words"
         label.font = .systemFont(ofSize: 16)
+        label.textAlignment = .justified
         label.textColor = .darkGray
         label.numberOfLines = 0
         return label
@@ -77,9 +78,10 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
     
     lazy var notesLabel2: UILabel = {
         let label = UILabel()
-        label.text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersf"
+        label.text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersf  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersf  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lettersf"
         label.font = .systemFont(ofSize: 16)
         label.textColor = .darkGray
+        label.textAlignment = .justified
         label.numberOfLines = 0
         return label
     }()
@@ -89,6 +91,7 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
         label.text = "Fill Above Text Fields!"
         label.font = .systemFont(ofSize: 16)
         label.textColor = .darkGray
+        label.heightAnchor.constraint(equalToConstant: 30).isActive = true
         label.numberOfLines = 0
         return label
     }()
@@ -101,12 +104,6 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
         return stackView
     }()
     
-    lazy var footerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        return view
-    }()
-
     lazy var actionButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Confirm", for: .normal)
@@ -116,12 +113,6 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
         return button
     }()
 
-//    lazy var scrollView: UIScrollView = {
-//        let scrollView = UIScrollView()
-//        scrollView.translatesAutoresizingMaskIntoConstraints = false
-//        return scrollView
-//    }()
-    
     lazy var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -132,10 +123,15 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
 
     override func contentView() -> UIView? {
            return containerView
+//        return scrollView
        }
     
     override var cornerRadius: CGFloat {
         return 12
+    }
+    
+    override var headerViewHeightConstraint: CGFloat {
+        return 58
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -160,7 +156,10 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addContentToScrollView(content: containerView)
+        scrollView.contentInset = UIEdgeInsets(top: headerViewHeightConstraint, left: 0, bottom: 0, right: 0)
+//        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: footerView.frame.height, right: 0)
+        scrollView.scrollIndicatorInsets = scrollView.contentInset
+
         setupConstraints()
         
         textField.delegate = self
@@ -175,7 +174,15 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
         super.viewDidLayoutSubviews()
         let containerHeight = containerView.frame.height
         // Now containerHeight should have the correct value
+        
+//        var contentRect = CGRect.zero
+//        for view in scrollView.subviews {
+//            contentRect = contentRect.union(view.frame)
+//        }
+//        scrollView.contentSize = contentRect.size
     }
+    
+
 
     
     func setupConstraints() {
@@ -223,7 +230,6 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
             actionButton.bottomAnchor.constraint(equalTo: footerView.bottomAnchor, constant: -16),
         ])
 //        addContentToScrollView(content: containerView)
-        
         view.layoutIfNeeded()
         
         defaultContainerHeight = containerView.frame.height
@@ -234,6 +240,90 @@ class CustomModalViewController: BaseModalViewController, UITextFieldDelegate {
         containerViewHeightConstraint?.isActive = true
         containerViewBottomConstraint?.isActive = true
     }
+    
+   /*func setupConstraints() { //fixed scrolling but transition have problem
+        view.addSubview(headerViewSheet)
+        headerViewSheet.translatesAutoresizingMaskIntoConstraints = false
+    
+        view.addSubview(containerView)
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+    
+        containerView.addSubview(scrollView)
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+    
+        scrollView.addSubview(contentStackView)
+        contentStackView.translatesAutoresizingMaskIntoConstraints = false
+    
+        view.addSubview(footerView)
+        footerView.translatesAutoresizingMaskIntoConstraints = false
+    
+        footerView.addSubview(actionButton)
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+    
+        NSLayoutConstraint.activate([
+            // Header view constraints
+            headerViewSheet.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            headerViewSheet.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            headerViewSheet.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            headerViewSheet.heightAnchor.constraint(equalToConstant: headerViewHeightConstraint),
+    
+            // Container view constraints
+              containerView.topAnchor.constraint(equalTo: headerViewSheet.bottomAnchor),
+              containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+              containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+              containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+    
+            // Scroll view constraints
+            scrollView.topAnchor.constraint(equalTo: containerView.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+    
+            // Content stack view constraints
+            contentStackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: headerViewHeightConstraint),
+            contentStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            contentStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
+            contentStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            contentStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -40),
+    
+            // Footer view constraints
+            footerView.topAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 10),
+            footerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            footerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            footerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            footerView.heightAnchor.constraint(equalToConstant: 81),
+    
+            // Action button constraints
+            actionButton.topAnchor.constraint(equalTo: footerView.topAnchor, constant: 16),
+            actionButton.leadingAnchor.constraint(equalTo: footerView.leadingAnchor, constant: 16),
+            actionButton.trailingAnchor.constraint(equalTo: footerView.trailingAnchor, constant: -16),
+            actionButton.bottomAnchor.constraint(equalTo: footerView.bottomAnchor, constant: -16),
+        ])
+    
+        view.layoutIfNeeded()
+    
+        defaultContainerHeight = containerView.frame.height
+    
+        containerViewHeightConstraint = containerView.heightAnchor.constraint(equalToConstant: defaultContainerHeight)
+        containerViewBottomConstraint = containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: defaultContainerHeight)
+    
+        containerViewHeightConstraint?.isActive = true
+        containerViewBottomConstraint?.isActive = true
+    }*/
+    
+
+    
+//
+//     override func adjustModalHeightBasedOnContent() {
+//        let headerHeight = headerViewSheet.frame.size.height
+//        let contentHeight = contentStackView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+//        let footerHeight = footerView.frame.size.height
+//
+//        let totalHeight = headerHeight + contentHeight + footerHeight
+//
+//        // Adjust the height in the base class
+//        (self as? BaseModalViewController)?.adjustContainerHeight(totalHeight)
+//    }
     
     
     @objc func actionButtonHandler() {
