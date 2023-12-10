@@ -28,14 +28,14 @@ class ViewController: UIViewController {
     
     
     @IBAction func showListModalView(_ sender: Any) {
-        let vc = DropDownUseCaseViewController()
+        let vc = DropDownViewController()
         vc.modalPresentationStyle = .custom
         self.present(vc, animated: false)
     }
     
     
     @IBAction func showChildViewControllerWithPresentModal(_ sender: Any) {
-        let vc = BottomSheetUseCaseViewController()
+        let vc = BottomSheetViewController()
         vc.modalPresentationStyle = .custom
         self.present(vc, animated: false)
     }

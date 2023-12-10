@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
+class CustomBottomSheet: UIViewController {
 
     // MARK: - Enums and Variables
 
@@ -55,8 +55,6 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
         return false
     }
 
-
-
     var topDistance: SheetTopDistance {
         .intrinsicContentSize
     }
@@ -77,7 +75,6 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
     }
     private var originalModalYPosition: CGFloat = 0
 
-    
     // Constants
     var maxDimmedAlpha              : CGFloat = 0.5
     var defaultContainerHeight      : CGFloat = 500 //for default state with no containerViewHeightConstraint is setted.
@@ -91,18 +88,12 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
     var containerViewBottomConstraint: NSLayoutConstraint?
     var scrollViewTopConstraint: NSLayoutConstraint?
 
-    
-    var prefersGrabberVisible: Bool {
-        return false
-    }
-    
-
 
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        adjustForKeyboardAppearance()
+        setupShowingKeyboard()
         setupPanGesture()
         setupOverlayView()
         setupScrollView()
@@ -113,7 +104,6 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleCloseAction))
         view.addGestureRecognizer(tapGesture)
         containerViewBottomConstraint?.constant = defaultContainerHeight
-    
     }
 
     deinit {
@@ -169,15 +159,12 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
         animateShowOverlayView()
         adjustModalHeightBasedOnContent()
         animatePresentContainer()
-
     }
     
-    func adjustForKeyboardAppearance() {
+    func setupShowingKeyboard() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-    
-
     
     func setActiveTextField(_ textField: UITextField?) {
           activeTextField = textField
@@ -238,10 +225,8 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 
-//MARK: - Pan Gesture Handling
+   //MARK: - Pan Gesture Handling
     
-
-
     func setupPanGesture() {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.handlePanGesture(gesture:)))
         panGesture.delaysTouchesBegan = false
@@ -326,9 +311,7 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
 
         }
     }
-
- 
-    
+   
     //MARK: - Adjust Modal Height
     func adjustModalHeightBasedOnContent() {
           guard let contentView = contentView() else { return }
@@ -341,7 +324,6 @@ class CustomBottomSheetViewController: UIViewController, UIScrollViewDelegate {
 
           view.layoutIfNeeded()
       }
-
 }
 
 

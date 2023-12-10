@@ -8,7 +8,8 @@
 
 import UIKit
 
-class BottomSheetUseCaseViewController: CustomBottomSheetViewController, UITextFieldDelegate {
+/// Class conforming to `CustomBottomSheet` for showig bottomSheet.
+class BottomSheetViewController: CustomBottomSheet, UITextFieldDelegate {
    
     
     lazy var headerViewSheet: UIView = {
@@ -48,7 +49,7 @@ class BottomSheetUseCaseViewController: CustomBottomSheetViewController, UITextF
 
     lazy var notesLabel: UILabel = {
         let label = UILabel()
-        label.text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofIt It is a long established fact   "
+        label.text = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofIt It is a long established fact   is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
         label.font = .systemFont(ofSize: 16)
         label.textColor = .darkGray
         label.textAlignment = .justified

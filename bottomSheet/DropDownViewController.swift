@@ -7,7 +7,8 @@
 
 import UIKit
 
-class DropDownUseCaseViewController: CustomBottomSheetViewController, UITableViewDataSource, UITableViewDelegate {
+/// Class conforming to `CustomBottomSheet` for showig dropDown.
+class DropDownViewController: CustomBottomSheet, UITableViewDataSource, UITableViewDelegate {
 
     private let tableView: UITableView = {
         let table = UITableView()
